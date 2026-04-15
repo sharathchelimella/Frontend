@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #1a1a1a;
+            margin: 0px;
+            padding: 0px;
+        }
+        h1{
+            margin: 0px;
+            color: white;
+            margin-bottom: 20px;
+        }
+        .nav1{
+            background-color: antiquewhite;
+            
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        .nav1 ul{
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .nav1 li{
+            display: inline;
+        }
+        .nav1 a{
+            text-decoration: none;
+            color: black;
+        
+            border-radius: 5px;
+            padding: 5px 15px;
+            position: relative;
+        }
+        .nav1 button{
+            background-color: cadetblue;
+            color: white;
+            border: none;
+        }
+        .nav1 a::after{
+            content: "";
+            position: absolute;
+            height: 2px;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            background-color: blue;
+            transform: scaleX(0);
+            transition: transform 0.3s
+            ease-in-out;
+        }
+        .nav1 a:hover::after{
+            transform: scaleX(1);
+        }
+
+
+        .nav2{
+            background-color: darkgreen;
+            width: 150px;
+            padding: 5px;
+            margin-bottom: 20px;
+        }
+        .nav2 ul{
+            list-style-type: none;
+            margin: 0%;
+            padding: 0%;
+            
+        }
+        .nav2 li{
+            list-style-type: none;
+            margin-bottom: 5px;
+            
+    
+        }
+        .nav2 a{
+            text-decoration: none;
+            color: white;
+            display: block;
+        }
+        .nav2 button{
+            background-color: lightgreen;
+            width: 100%;
+            border: 1px solid white;
+        }
+        .nav2 a:hover{
+            background-color:grey;
+        }
+        .nav2 button:hover{
+            background-color: burlywood;
+        }
+
+
+
+        .nav3{
+            background-color: lightblue;
+        }
+        .nav3 ul{
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .nav3 li{
+            padding: 10px;
+            
+        }
+        .nav3 a{
+            text-decoration: none;
+            color: aliceblue;
+            padding: 10px;
+            display: block;
+        }
+        .nav3 .tagdropdown{
+            display: none;
+        }
+        .nav3 .dropdown:hover .tagdropdown{
+            display: block;
+            position: absolute;
+            background-color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+    <div cl ass="container1"> 
+        <h1>Varation 1: Horizontal with underline effect</h1>
+        <nav class="nav1">
+            <ul>
+                <li><a href="Home">Home</a></li>
+                <li><a href="About">About</a></li>
+                <li><a href="Product">Product</a></li>
+                <button type="submit">Login</button>
+            </ul>
+        </nav>
+    </div>
+    <div>
+        <h1>Vration 2: Vertical with hover effect</h1>
+        <nav class="nav2">
+            
+            <ul>
+                <li><a href="Home">Home</a></li>
+                <li><a href="About">About</a></li>
+                <li><a href="Product">Product</a></li>
+                <button type="submit">Login</button>
+            </ul>
+        </nav>
+       
+    </div>
+    <h1>Vration 3: Vertical and Horizontal</h1>
+        <div class="nav3">
+        
+        <ul>
+            <li><a href="Home">Home</a></li>
+            <li class="dropdown"><a href="About">About</a>
+                <div class="tagdropdown">
+                    <a href="">Comapny</a>
+                    <a href="">History</a>
+                    <a href="">Location</a>
+                </div>
+            </li>
+            <li><a href="Product">Product</a></li>
+            <button type="submit">Login</button>
+        </ul>
+    </div>
+</body>
+</html>

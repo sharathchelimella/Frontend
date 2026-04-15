@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .body{
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            color: brown;
+        }
+        .contaiiner{
+            border: 1px,solid,black;
+        }
+        .cont2{
+            display: grid;
+            gap: 10px;
+            background-color: beige;
+    
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(3,100px);
+
+        }
+        .box:nth-child(even){
+            background-color: lightblue;
+        }
+        
+        .box{
+            background-color: red;
+            color: white;
+            font-size: 18px;    
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Css Grid Masterclass Demo</h1>
+    <div class="contaiiner">
+        <h2>1.Basic Grid </h2>
+        <div class="cont2">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+            <div class="box">6</div>
+        </div>
+    </div>
+</body>
+</html>
