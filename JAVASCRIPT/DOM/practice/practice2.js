@@ -11,7 +11,6 @@ btn.addEventListener("click", function (){
 
 });
 
-
 function randomColor(){
     let red = Math.floor(Math.random()*255);
     let blu = Math.floor(Math.random()*255);
