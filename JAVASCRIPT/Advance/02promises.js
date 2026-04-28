@@ -80,57 +80,57 @@
 
 //Promisses chaining
 
-//  function savetodb(data ){
-//     return new Promise((resolve,rejected)=>{
-//         let internestspeed = Math.floor(Math.random()*10)+1;
-//         if(internestspeed > 5){
-//             resolve("succes: your data was saved");
-//         }else{
-//             rejected("failure: your data was not saved"); 
-//         } 
-//     });
-// }
-
-// savetodb("Promises chaining")
-// .then(()=>{
-//     console.log("data was saved .promise is resolved ");
-//     return savetodb("Promises chaining");   //it returns the promises so that it will become input of  next then
-// })
-// .then(()=>{  // we will implement again by call back
-//     console.log("data was saved.promises is resolved");
-//                                     // once if we stop returns the promises then the chaiin will be breaked
-// })
-// .catch(()=>{
-//     console.log("promises was rejected");  // if any error occurs in the promisses it will print catch
-// }) 
+ function savetodb(data ){
+    return new Promise((resolve,rejected)=>{
+        let internestspeed = Math.floor(Math.random()*10)+1;
+        if(internestspeed > 5){
+            resolve("succes: your data was saved");
+        }else{
+            rejected("failure: your data was not saved"); 
+        } 
+    });
+}
+  
+savetodb("Promises chaining")
+.then(()=>{
+    console.log("data was saved .promise is resolved ");
+    return savetodb("Promises chaining");   //it returns the promises so that it will become input of  next then
+})
+.then(()=>{  // we will implement again by call back
+    console.log("data was saved.promises is resolved");
+                                    // once if we stop returns the promises then the chaiin will be breaked
+})
+.catch(()=>{
+    console.log("promises was rejected");  // if any error occurs in the promisses it will print catch
+}) 
 
 
 
 //promisses are rejected and resolved with some data(valid result pr error)
 
-//  function savetodb(data ){
-//     return new Promise((resolve,rejected)=>{
-//         let internestspeed = Math.floor(Math.random()*10)+1;
-//         if(internestspeed > 5){
-//             resolve("succes: your data was saved");
-//         }else{
-//             rejected("failure: your data was not saved"); 
-//         } 
-//     });
-// }
+ function savetodb(data ){
+    return new Promise((resolve,rejected)=>{
+        let internestspeed = Math.floor(Math.random()*10)+1;
+        if(internestspeed > 5){
+            resolve("succes: your data was saved");
+        }else{
+            rejected("failure: your data was not saved"); 
+        } 
+    });
+}
 
-// savetodb("Promises chaining")
-// .then((result)=>{   //passing the arguments in the methods promises are rejected and resolve with some data(valid result of error) 
-//     console.log("data was saved .promise is resolved ",result);
-//     return savetodb("Promises chaining");   //it returns the promises so that it will become input of  next then
-// })
-// .then((result)=>{  // we will implement again by call back
-//     console.log("data was saved.promises is resolved");
-//                                     // once if we stop returns the promises then the chaiin will be breaked
-// })
-// .catch((result)=>{
-//     console.log("promises was rejected", result);  // if any error occurs in the promisses it will print catch
-// }) 
+savetodb("Promises chaining")
+.then((result)=>{   //passing the arguments in the methods promises are rejected and resolve with some data(valid result of error) 
+    console.log("data was saved .promise is resolved ",result);
+    return savetodb("Promises chaining");   //it returns the promises so that it will become input of  next then
+})
+.then((result)=>{  // we will implement again by call back
+    console.log("data was saved.promises is resolved");
+                                    // once if we stop returns the promises then the chaiin will be breaked
+})
+.catch((result)=>{
+    console.log("promises was rejected", result);  // if any error occurs in the promisses it will print catch
+}) 
 
 
 
