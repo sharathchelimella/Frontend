@@ -41,16 +41,49 @@
 // }); 
 
 
+
+
 //Using  async await
 
-let url = "https://catfact.ninja/fact";
+// let url = "https://catfact.ninja/fact";
+// async function callfact(){
+//     try{
+//         let res = await fetch(url);
+//         let data = await res.json();
+//         console.log(data.fact);
 
-async function callfact(){
-    try{
-        let res = await fetch(url);
-        let data = await res.json();
-        console.log(data.fact);
-    }  catch(err){
-        console.log(err);
-    }
-}
+//         let res = await fetch(url);
+//         let data = await res.json(); 
+//         console.log(data.fact);
+
+//     }catch(err){
+//         console.log(err);
+//     }
+// } 
+// callfact()
+
+
+
+//AXIOS -->  Library to make HTTP requests
+//using axios we create the request
+
+
+// let button = document.querySelector("button");
+// button.addEventListener("click", async ()=>{
+//     let fact = await getfacts();
+//     console.log(fact);
+//     let p = document.querySelector("#pid");
+//     p.innerText = fact; 
+// });
+
+
+// let url = "https://catfact.ninja/fact";
+// async function getfacts(){
+//     try{
+//         let res = await axios.get(url);
+//         return res.data.fact;
+//     }catch(e){
+//         console.log(e);
+        
+//     }
+// }
